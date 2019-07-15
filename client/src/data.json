@@ -1,0 +1,51 @@
+{
+  "breakfast": [
+    {
+      "name": "Eggs and vegetables fried in coconut oil. One banana",
+      "link": "https://www.popsugar.com/fitness/Egg-Vegetables-Recipe-36905717",
+      "ingredients": [
+        { "name": "cauliflower", "quantity": 0.5 },
+        { "name": "broccoli", "quantity": 2 },
+        { "name": "egg", "quantity": 1 },
+        { "name": "banana", "quantity": 1}
+      ],
+      "commonItems": ["salt", "pepper", "garlic", "oil"],
+      "calories": 410
+    },
+    {
+      "name": "Bacon and eggs, with an apple"
+    },
+    {
+      "name": "Meat with vegetables"
+    },
+    {
+      "name": "Eggs and a piece of fruit."
+    }
+  ],
+  "lunch&dinner": [
+    {
+      "name": "Chicken salad with olive oil. Handful of nuts."
+    },
+    {
+      "name": "Burgers (no bun) fried in butter, with vegetables and some salsa"
+    },
+    {
+      "name": "Sandwich in a lettuce leaf, with meat and fresh vegetables"
+    },
+    {
+      "name": "Salmon fried in butter, with vegetables."
+    },
+    {
+      "name": "Ground beef stir-fry with vegetables. Some berries."
+    },
+    {
+      "name": "Fried beef with vegetables"
+    },
+    {
+      "name": "Baked salmon with vegetables and avocado."
+    },
+    {
+      "name": "Grilled chicken wings with vegetables and salsa."
+    }
+  ]
+}

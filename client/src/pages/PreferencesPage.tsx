@@ -4,7 +4,7 @@ import { ProgressSteps, Step } from "baseui/progress-steps";
 import { Button, KIND } from "baseui/button";
 import { ButtonGroup } from "baseui/button-group";
 import { Block } from "baseui/block";
-import { RouteComponentProps } from "@reach/router";
+import { RouteComponentProps, Link } from "@reach/router";
 
 interface PreferencesPageProps extends RouteComponentProps {}
 
@@ -49,7 +49,9 @@ export function PreferencesPage(props: PreferencesPageProps) {
       <Step title="Add Payment Method">
         <Block font="font400">Here too!</Block>
         <Button onClick={() => setCurrentStepIndex(1)}>Previous</Button>
-        <Button disabled>Next</Button>
+        <Link to="/calendar">
+          <Button>Submit</Button>
+        </Link>
       </Step>
     </ProgressSteps>
   );
