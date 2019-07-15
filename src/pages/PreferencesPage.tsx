@@ -1,32 +1,54 @@
 import React, { useState } from "react";
 
 import { ProgressSteps, Step } from "baseui/progress-steps";
-import { Button } from "baseui/button";
+import { Button, KIND } from "baseui/button";
+import { ButtonGroup } from "baseui/button-group";
 import { Block } from "baseui/block";
-import { StatefulSelect, TYPE } from "baseui/select";
 import { RouteComponentProps } from "@reach/router";
 
 interface PreferencesPageProps extends RouteComponentProps {}
 
 export function PreferencesPage(props: PreferencesPageProps) {
-  const [current, setCurrent] = useState(0);
+  const [currentStepIndex, setCurrentStepIndex] = useState(0);
+  const [gender, setGender] = useState<{
+    index: number;
+    name: string;
+  }>({
+    index: 0,
+    name: "Male"
+  });
+
+  const handleGenderChange = (event: any, index: number) => {
+    if (index === 0) {
+      setGender({ index: index, name: "Male" });
+    } else if (index === 1) {
+      setGender({ index: index, name: "Female" });
+    }
+  };
 
   return (
-    <ProgressSteps current={current}>
-      <Step title="Create Account">
-        <Block font="font400">Here is some step content</Block>
+    <ProgressSteps current={currentStepIndex}>
+      <Step title="Select Gender">
+        <ButtonGroup
+          selected={gender.index}
+          mode="radio"
+          onClick={handleGenderChange as any}
+        >
+          <Button>Male</Button>
+          <Button>Female</Button>
+        </ButtonGroup>
 
         <Button disabled>Previous</Button>
-        <Button onClick={() => setCurrent(1)}>Next</Button>
+        <Button onClick={() => setCurrentStepIndex(1)}>Next</Button>
       </Step>
-      <Step title="Verify Payment">
+      <Step title="Weight&Height">
         <Block font="font400">Here is some some content</Block>
-        <Button onClick={() => setCurrent(0)}>Previous</Button>
-        <Button onClick={() => setCurrent(2)}>Next</Button>
+        <Button onClick={() => setCurrentStepIndex(0)}>Previous</Button>
+        <Button onClick={() => setCurrentStepIndex(2)}>Next</Button>
       </Step>
       <Step title="Add Payment Method">
         <Block font="font400">Here too!</Block>
-        <Button onClick={() => setCurrent(1)}>Previous</Button>
+        <Button onClick={() => setCurrentStepIndex(1)}>Previous</Button>
         <Button disabled>Next</Button>
       </Step>
     </ProgressSteps>

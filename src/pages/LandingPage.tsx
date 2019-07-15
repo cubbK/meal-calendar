@@ -1,6 +1,6 @@
 import React from "react";
 import { Display } from "baseui/typography";
-import { Button, KIND } from "baseui/button";
+import { Button } from "baseui/button";
 import { RouteComponentProps, Link } from "@reach/router";
 
 interface LandingPageProps extends RouteComponentProps {}
