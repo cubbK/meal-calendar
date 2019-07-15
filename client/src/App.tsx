@@ -6,6 +6,7 @@ import { LightTheme, BaseProvider } from "baseui";
 import { LandingPage } from "./pages/LandingPage";
 import { Router } from "@reach/router";
 import { PreferencesPage } from "./pages/PreferencesPage";
+import { CalendarPage } from "./pages/CalendarPage";
 
 const engine = new Styletron();
 
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Router>
           <LandingPage path="/" />
           <PreferencesPage path="preferences" />
+          <CalendarPage path="calendar" />
         </Router>
       </BaseProvider>
     </StyletronProvider>
