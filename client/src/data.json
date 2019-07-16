@@ -1,25 +1,28 @@
 {
   "breakfast": [
     {
-      "name": "Eggs and vegetables fried in coconut oil. One banana",
+      "name": "Eggs and vegetables fried in coconut oil",
+      "requiresFruit": true,
       "link": "https://www.popsugar.com/fitness/Egg-Vegetables-Recipe-36905717",
       "ingredients": [
         { "name": "cauliflower", "quantity": 0.5 },
         { "name": "broccoli", "quantity": 2 },
         { "name": "egg", "quantity": 1 },
-        { "name": "banana", "quantity": 1}
+        { "name": "banana", "quantity": 1 }
       ],
       "commonItems": ["salt", "pepper", "garlic", "oil"],
-      "calories": 410
-    },
-    {
-      "name": "Bacon and eggs, with an apple"
+      "calories": 320
     },
     {
       "name": "Meat with vegetables"
     },
     {
-      "name": "Eggs and a piece of fruit."
+      "name": "Hard boiled eggs.",
+      "requiresFruit": true,
+      "link": "https://www.simplyrecipes.com/recipes/how_to_make_perfect_hard_boiled_eggs/",
+      "ingredients": [{ "name": "egg", "quantity": 2 }],
+      "commonItems": [],
+      "calories": 310
     }
   ],
   "lunch&dinner": [
@@ -47,5 +50,13 @@
     {
       "name": "Grilled chicken wings with vegetables and salsa."
     }
+  ],
+  "fruits": [
+    { "name": "banana", "calories": 90 },
+    { "name": "apple", "calories": 95 },
+    { "name": "pear", "calories": 100 },
+    { "name": "orange", "calories": 45 },
+    { "name": "grapes", "calories": 65 },
+    { "name": "grapefruit", "calories": 40 }
   ]
 }
