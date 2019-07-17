@@ -11,10 +11,8 @@
         { "name": "banana", "quantity": 1 }
       ],
       "commonItems": ["salt", "pepper", "garlic", "oil"],
-      "calories": 320
-    },
-    {
-      "name": "Meat with vegetables"
+      "calories": 320,
+      "yeld": 1
     },
     {
       "name": "Hard boiled eggs.",
@@ -22,12 +20,34 @@
       "link": "https://www.simplyrecipes.com/recipes/how_to_make_perfect_hard_boiled_eggs/",
       "ingredients": [{ "name": "egg", "quantity": 2 }],
       "commonItems": [],
-      "calories": 310
+      "calories": 310,
+      "yeld": 1
     }
   ],
   "lunch&dinner": [
     {
-      "name": "Chicken salad with olive oil. Handful of nuts."
+      "name": "Chicken salad with olive oil. Handful of nuts.",
+      "link": "https://healthyrecipesblogs.com/olive-oil-chicken-salad/",
+      "ingredients": [
+        {
+          "name": "red onion",
+          "quantity": 1
+        },
+        {
+          "name": "small chicken",
+          "quantity": 1
+        },
+        {
+          "name": "scallions",
+          "quantity": 4
+        },
+        {
+          "name": "herbs: basil, tarragon, cilantro, Thai basil, mint",
+          "quantity": "a handful"
+        }
+      ],
+      "commonItems": ["salt", "pepper", "oil"],
+      "yeld": 4
     },
     {
       "name": "Burgers (no bun) fried in butter, with vegetables and some salsa"
