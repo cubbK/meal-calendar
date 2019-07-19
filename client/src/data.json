@@ -53,7 +53,36 @@
       "name": "Burgers (no bun) fried in butter, with vegetables and some salsa"
     },
     {
-      "name": "Sandwich in a lettuce leaf, with meat and fresh vegetables"
+      "name": "Sandwich in a lettuce leaf, with meat and fresh vegetables",
+      "link": "lceberg lettuce",
+      "ingredients": [
+        {
+          "name": "lceberg lettuce",
+          "quantity": 1
+        },
+        {
+          "name": "turkey slices",
+          "quantity" : 4
+        },
+        {
+          "name": "tomatoes",
+          "quantity": 1
+        },
+        {
+          "name": "red onion",
+          "quantity": 1
+        },
+        {
+          "name": "cheese slice",
+          "quantity": 1
+        },
+        {
+          "name": "bacon strips",
+          "quantity": 2
+        }
+      ],
+      "commonItems": ["pepper", "mustard", "parchment paper"],
+      "yeld": 1
     },
     {
       "name": "Salmon fried in butter, with vegetables."
