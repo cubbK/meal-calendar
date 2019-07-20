@@ -93,7 +93,7 @@
     },
     {
       "name": "Sandwich in a lettuce leaf, with meat and fresh vegetables",
-      "link": "lceberg lettuce",
+      "link": "https://lexiscleankitchen.com/lettuce-wrap-sandwich/",
       "ingredients": [
         {
           "name": "lceberg lettuce",
@@ -194,6 +194,7 @@
     },
     {
       "name": "Fried beef with vegetables",
+      "link": "https://www.allrecipes.com/recipe/228823/quick-beef-stir-fry/",
       "ingredients": [
         {
           "name": "beef sirloin",
