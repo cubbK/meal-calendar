@@ -12,7 +12,7 @@
       ],
       "commonItems": ["salt", "pepper", "oil"],
       "caloriesPerServing": 320,
-      "yeld": 1
+      "servings": 1
     },
     {
       "name": "Hard boiled eggs.",
@@ -21,10 +21,10 @@
       "ingredients": [{ "name": "egg", "quantity": 2 }],
       "commonItems": [],
       "caloriesPerServing": 310,
-      "yeld": 1
+      "servings": 1
     }
   ],
-  "lunch&dinner": [
+  "lunchAndDinner": [
     {
       "name": "Chicken salad with olive oil. Handful of nuts.",
       "link": "https://healthyrecipesblogs.com/olive-oil-chicken-salad/",
@@ -47,7 +47,7 @@
         }
       ],
       "commonItems": ["salt", "pepper", "oil"],
-      "yeld": 4,
+      "servings": 4,
       "caloriesPerServing": 335
     },
     {
@@ -88,7 +88,7 @@
         "pepper",
         "basil"
       ],
-      "yeld": 2,
+      "servings": 2,
       "caloriesPerServing": 440
     },
     {
@@ -121,7 +121,7 @@
         }
       ],
       "commonItems": ["pepper", "mustard", "parchment paper"],
-      "yeld": 1,
+      "servings": 1,
       "caloriesPerServing": 430
     },
     {
@@ -150,7 +150,7 @@
         }
       ],
       "commonItems": ["salt", "pepper", "soy sauce", "vinegar", "ginger"],
-      "yeld": 2,
+      "servings": 2,
       "caloriesPerServing": 400
     },
     {
@@ -189,7 +189,7 @@
         "sesame seeds",
         "sesame oil"
       ],
-      "yeld": 2,
+      "servings": 2,
       "caloriesPerServing": 500
     },
     {
@@ -222,7 +222,7 @@
         }
       ],
       "commonItems": ["oil", "soy souce", "sesame seeds"],
-      "yeld": 4,
+      "servings": 4,
       "caloriesPerServing": 270
     }
   ],
