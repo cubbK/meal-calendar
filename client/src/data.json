@@ -10,8 +10,8 @@
         { "name": "egg", "quantity": 1 },
         { "name": "banana", "quantity": 1 }
       ],
-      "commonItems": ["salt", "pepper", "garlic", "oil"],
-      "calories": 320,
+      "commonItems": ["salt", "pepper", "oil"],
+      "caloriesPerServing": 320,
       "yeld": 1
     },
     {
@@ -20,7 +20,7 @@
       "link": "https://www.simplyrecipes.com/recipes/how_to_make_perfect_hard_boiled_eggs/",
       "ingredients": [{ "name": "egg", "quantity": 2 }],
       "commonItems": [],
-      "calories": 310,
+      "caloriesPerServing": 310,
       "yeld": 1
     }
   ],
@@ -47,7 +47,8 @@
         }
       ],
       "commonItems": ["salt", "pepper", "oil"],
-      "yeld": 4
+      "yeld": 4,
+      "caloriesPerServing": 335
     },
     {
       "name": "Burgers (no bun) fried in butter, with vegetables and some salsa"
@@ -82,16 +83,102 @@
         }
       ],
       "commonItems": ["pepper", "mustard", "parchment paper"],
-      "yeld": 1
+      "yeld": 1,
+      "caloriesPerServing": 430
     },
     {
-      "name": "Salmon fried in butter, with vegetables."
+      "name": "Fried salmon, with vegetables.",
+      "link": "https://aggieskitchen.com/salmon-and-veggie-stir-fry-day-4-of-the-17-day-diet/",
+      "ingredients": [
+        {
+          "name": "salmon",
+          "quantity": "400 grams"
+        },
+        {
+          "name": "asparagus",
+          "quantity": "a handful"
+        },
+        {
+          "name": "broccoli",
+          "quantity": "a handful"
+        },
+        {
+          "name": "onion",
+          "quantity": 1
+        },
+        {
+          "name": "garlic cloves",
+          "quantity": 2
+        }
+      ],
+      "commonItems": ["salt", "pepper", "soy sauce", "vinegar", "ginger"],
+      "yeld": 2,
+      "caloriesPerServing": 400
     },
     {
-      "name": "Ground beef stir-fry with vegetables. Some berries."
+      "name": "Ground beef stir-fry with vegetables. Some berries.",
+      "link": "https://valentinascorner.com/ground-beef-stir-fry/",
+      "ingredients": [
+        {
+          "name": "ground beef",
+          "quantity": "700 grams"
+        },
+        {
+          "name": "bell pepper",
+          "quantity": 1
+        },
+        {
+          "name": "white mushrooms",
+          "quantity": "350 grams"
+        },
+        {
+          "name": "carot",
+          "quantity": 1
+        },
+        {
+          "name": "green onions",
+          "quantity": 5
+        },
+        {
+          "name": "garlic cloves",
+          "quantity": 2
+        }
+      ],
+      "commonItems": ["oil", "soy sauce", "brown sugar", "sesame seeds", "sesame oil"],
+      "yeld": 2,
+      "caloriesPerServing": 500
     },
     {
-      "name": "Fried beef with vegetables"
+      "name": "Fried beef with vegetables",
+      "ingredients": [
+        {
+          "name": "beef sirloin",
+          "quantity": "450 grams"
+        },
+        {
+          "name": "broccoli",
+          "quantity": "200 grams"
+        },
+        {
+          "name": "bell pepper",
+          "quantity": 1
+        },
+        {
+          "name": "carrots",
+          "quantity": 2
+        },
+        {
+          "name": "onion",
+          "quantity": 1
+        },
+        {
+          "name": "garlic",
+          "quantity": 1
+        }
+      ],
+      "commonItems": ["oil", "soy souce", "sesame seeds"],
+      "yeld": 4,
+      "caloriesPerServing": 270
     },
     {
       "name": "Baked salmon with vegetables and avocado."
@@ -101,11 +188,11 @@
     }
   ],
   "fruits": [
-    { "name": "banana", "calories": 90 },
-    { "name": "apple", "calories": 95 },
-    { "name": "pear", "calories": 100 },
-    { "name": "orange", "calories": 45 },
-    { "name": "grapes", "calories": 65 },
-    { "name": "grapefruit", "calories": 40 }
+    { "name": "banana", "caloriesPerServing": 90 },
+    { "name": "apple", "caloriesPerServing": 95 },
+    { "name": "pear", "caloriesPerServing": 100 },
+    { "name": "orange", "caloriesPerServing": 45 },
+    { "name": "grapes", "caloriesPerServing": 65 },
+    { "name": "grapefruit", "caloriesPerServing": 40 }
   ]
 }
