@@ -51,7 +51,45 @@
       "caloriesPerServing": 335
     },
     {
-      "name": "Burgers (no bun) fried in butter, with vegetables and some salsa"
+      "name": "Burgers (no bun) fried in butter, with vegetables and some salsa",
+      "url": "https://www.tasteaholics.com/recipes/dinner/keto-quarter-pounder/",
+      "ingredients": [
+        {
+          "name": "ground beef",
+          "quantity": "250 grams"
+        },
+        {
+          "name": "bacon strip",
+          "quantity": 1
+        },
+        {
+          "name": "tomato",
+          "quantity": 1
+        },
+        {
+          "name": "onion",
+          "quantity": 1
+        },
+        {
+          "name": "egg",
+          "quantity": 1
+        },
+        {
+          "name": "lettuce",
+          "quantity": "2 leaves"
+        }
+      ],
+      "commonItems": [
+        "mayo",
+        "jalapenos",
+        "sriracha",
+        "butter",
+        "salt",
+        "pepper",
+        "basil"
+      ],
+      "yeld": 2,
+      "caloriesPerServing": 440
     },
     {
       "name": "Sandwich in a lettuce leaf, with meat and fresh vegetables",
@@ -63,7 +101,7 @@
         },
         {
           "name": "turkey slices",
-          "quantity" : 4
+          "quantity": 4
         },
         {
           "name": "tomatoes",
@@ -144,7 +182,13 @@
           "quantity": 2
         }
       ],
-      "commonItems": ["oil", "soy sauce", "brown sugar", "sesame seeds", "sesame oil"],
+      "commonItems": [
+        "oil",
+        "soy sauce",
+        "brown sugar",
+        "sesame seeds",
+        "sesame oil"
+      ],
       "yeld": 2,
       "caloriesPerServing": 500
     },
@@ -179,12 +223,6 @@
       "commonItems": ["oil", "soy souce", "sesame seeds"],
       "yeld": 4,
       "caloriesPerServing": 270
-    },
-    {
-      "name": "Baked salmon with vegetables and avocado."
-    },
-    {
-      "name": "Grilled chicken wings with vegetables and salsa."
     }
   ],
   "fruits": [
