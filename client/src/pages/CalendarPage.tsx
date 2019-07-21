@@ -52,20 +52,23 @@ enum Meal {
 // 7 dinner
 
 export function CalendarPage(props: CalendarPageProps) {
-  const mealsCalendar = getMealsCalendar(data, 2400);
+  const mealsCalendar = getMealsCalendar({ meals: data, dailyCalories: 2400 });
   return <React.Fragment>Calendar page</React.Fragment>;
 }
 
-function getMealsCalendar(meals: Data, dailyCalories: number) {
+function getMealsCalendar(config: { meals: Data; dailyCalories: number }) {
+  const { meals, dailyCalories } = config;
   const numberOfLunchesAndDinners = 4;
 
+  // pick randomly n lunchesAndDinners and store their
+  // indexes in an array
   let lunchesAndDinnersIndex: number[] = [];
   for (let i = 0; i < numberOfLunchesAndDinners; i++) {
-    const generatedNumber = generateRandomNumber(
-      0,
-      meals.lunchAndDinner.length - 1,
-      lunchesAndDinnersIndex
-    );
+    const generatedNumber = generateRandomNumber({
+      min: 0,
+      max: meals.lunchAndDinner.length - 1,
+      numbersToExclude: lunchesAndDinnersIndex
+    });
     lunchesAndDinnersIndex.push(generatedNumber);
   }
   console.log(lunchesAndDinnersIndex);
