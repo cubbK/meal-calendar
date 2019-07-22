@@ -71,7 +71,8 @@ function getMealsCalendar(config: { meals: Data; dailyCalories: number }) {
     howMany: 2
   });
 
-  canSetMakeSum({ set: lunchesAndDinners.map(meal => meal.servings), sum: 14 });
+  // canSetMakeSum({ set: [], sum: 4 });
+  canValuesFormNumber({values: [], numberToForm: 5})
 }
 
 // pick randomly n lunchesAndDinners and store their
@@ -121,18 +122,30 @@ function canSetMakeSum(config: { set: number[]; sum: number }): boolean {
   return canSetFormRest;
 }
 
-function canValuesFormNumber(config: {
+export function canValuesFormNumber(config: {
   values: number[];
   numberToForm: number;
 }): boolean {
   const { values, numberToForm } = config;
 
-  const allCombinations = Combinatorics.power(values).toArray()
-  debugger
-  const allCombinationSums = allCombinations.map((list) =>
+  if(values.length === 0) {
+    throw Error("Value list cannot be empty");
+    
+  }
+  if(numberToForm < 1) {
+    throw Error("NumberToFrom cannot be < 1")
+  }
+
+  const allCombinations: number[][] = []
+  for(const [i, value] of Object.entries(values)) {
+    allCombinations.push(...Combinatorics.baseN(values, Number(i)).toArray())
+  } 
+
+  const allCombinationSums = allCombinations.map(list =>
     list.reduce((accumulator, currentValue) => accumulator + currentValue)
   );
-  console.log(allCombinationSums);
+
+  debugger
   for (const combinationSum of allCombinationSums) {
     if (combinationSum === numberToForm) {
       return true;
