@@ -11,7 +11,7 @@
         { "name": "banana", "quantity": 1 }
       ],
       "commonItems": ["salt", "pepper", "oil"],
-      "caloriesPerServing": 320,
+      "calories": 320,
       "servings": 1
     },
     {
@@ -20,7 +20,7 @@
       "link": "https://www.simplyrecipes.com/recipes/how_to_make_perfect_hard_boiled_eggs/",
       "ingredients": [{ "name": "egg", "quantity": 2 }],
       "commonItems": [],
-      "caloriesPerServing": 310,
+      "calories": 310,
       "servings": 1
     }
   ],
@@ -31,24 +31,23 @@
       "ingredients": [
         {
           "name": "red onion",
-          "quantity": 1
+          "quantity": 0.16
         },
         {
-          "name": "small chicken",
-          "quantity": 1
+          "name": "chicken breasts",
+          "quantity": 0.6
         },
         {
-          "name": "scallions",
-          "quantity": 4
+          "name": "kalamata olives",
+          "quantity": "15 grams"
         },
         {
           "name": "herbs: basil, tarragon, cilantro, Thai basil, mint",
           "quantity": "a handful"
         }
       ],
-      "commonItems": ["salt", "pepper", "oil"],
-      "servings": 4,
-      "caloriesPerServing": 335
+      "commonItems": ["salt", "pepper", "oil", "vinegar"],
+      "calories": 335
     },
     {
       "name": "Burgers (no bun) fried in butter, with vegetables and some salsa",
@@ -60,23 +59,23 @@
         },
         {
           "name": "bacon strip",
-          "quantity": 1
+          "quantity": 0.5
         },
         {
           "name": "tomato",
-          "quantity": 1
+          "quantity": 0.250
         },
         {
           "name": "onion",
-          "quantity": 1
+          "quantity": 0.125
         },
         {
           "name": "egg",
-          "quantity": 1
+          "quantity": 0.5
         },
         {
-          "name": "lettuce",
-          "quantity": "2 leaves"
+          "name": "lettuce leaves",
+          "quantity": 1
         }
       ],
       "commonItems": [
@@ -88,16 +87,15 @@
         "pepper",
         "basil"
       ],
-      "servings": 2,
-      "caloriesPerServing": 440
+      "calories": 440
     },
     {
       "name": "Sandwich in a lettuce leaf, with meat and fresh vegetables",
       "link": "https://lexiscleankitchen.com/lettuce-wrap-sandwich/",
       "ingredients": [
         {
-          "name": "lceberg lettuce",
-          "quantity": 1
+          "name": "lettuce leaves",
+          "quantity": 2
         },
         {
           "name": "turkey slices",
@@ -105,24 +103,23 @@
         },
         {
           "name": "tomatoes",
-          "quantity": 1
+          "quantity": 0.200
         },
         {
           "name": "red onion",
-          "quantity": 1
+          "quantity": 0.100
         },
         {
           "name": "cheese slice",
           "quantity": 1
         },
         {
-          "name": "bacon strips",
+          "name": "bacon strip",
           "quantity": 2
         }
       ],
       "commonItems": ["pepper", "mustard", "parchment paper"],
-      "servings": 1,
-      "caloriesPerServing": 430
+      "calories": 430
     },
     {
       "name": "Fried salmon, with vegetables.",
@@ -130,7 +127,7 @@
       "ingredients": [
         {
           "name": "salmon",
-          "quantity": "400 grams"
+          "quantity": "200 grams"
         },
         {
           "name": "asparagus",
@@ -142,16 +139,15 @@
         },
         {
           "name": "onion",
-          "quantity": 1
+          "quantity": 0.250
         },
         {
-          "name": "garlic cloves",
-          "quantity": 2
+          "name": "garlic clove",
+          "quantity": 1
         }
       ],
       "commonItems": ["salt", "pepper", "soy sauce", "vinegar", "ginger"],
-      "servings": 2,
-      "caloriesPerServing": 400
+      "calories": 400
     },
     {
       "name": "Ground beef stir-fry with vegetables. Some berries.",
@@ -159,27 +155,27 @@
       "ingredients": [
         {
           "name": "ground beef",
-          "quantity": "700 grams"
+          "quantity": "170 grams"
         },
         {
           "name": "bell pepper",
-          "quantity": 1
+          "quantity": 0.25
         },
         {
           "name": "white mushrooms",
-          "quantity": "350 grams"
+          "quantity": "85 grams"
         },
         {
           "name": "carot",
-          "quantity": 1
+          "quantity": 0.5
         },
         {
           "name": "green onions",
-          "quantity": 5
+          "quantity": 2
         },
         {
-          "name": "garlic cloves",
-          "quantity": 2
+          "name": "garlic clove",
+          "quantity": 0.75
         }
       ],
       "commonItems": [
@@ -189,8 +185,7 @@
         "sesame seeds",
         "sesame oil"
       ],
-      "servings": 2,
-      "caloriesPerServing": 500
+      "calories": 500
     },
     {
       "name": "Fried beef with vegetables",
@@ -198,40 +193,39 @@
       "ingredients": [
         {
           "name": "beef sirloin",
-          "quantity": "450 grams"
+          "quantity": "110 grams"
         },
         {
           "name": "broccoli",
-          "quantity": "200 grams"
+          "quantity": "50 grams"
         },
         {
           "name": "bell pepper",
-          "quantity": 1
+          "quantity": 0.25
         },
         {
-          "name": "carrots",
-          "quantity": 2
+          "name": "carrot",
+          "quantity": 0.5
         },
         {
-          "name": "onion",
-          "quantity": 1
+          "name": "green onion",
+          "quantity": 0.25
         },
         {
           "name": "garlic",
-          "quantity": 1
+          "quantity": 0.25
         }
       ],
       "commonItems": ["oil", "soy souce", "sesame seeds"],
-      "servings": 4,
-      "caloriesPerServing": 270
+      "calories": 270
     }
   ],
   "fruits": [
-    { "name": "banana", "caloriesPerServing": 90 },
-    { "name": "apple", "caloriesPerServing": 95 },
-    { "name": "pear", "caloriesPerServing": 100 },
-    { "name": "orange", "caloriesPerServing": 45 },
-    { "name": "grapes", "caloriesPerServing": 65 },
-    { "name": "grapefruit", "caloriesPerServing": 40 }
+    { "name": "banana", "calories": 90 },
+    { "name": "apple", "calories": 95 },
+    { "name": "pear", "calories": 100 },
+    { "name": "orange", "calories": 45 },
+    { "name": "grapes", "calories": 65 },
+    { "name": "grapefruit", "calories": 40 }
   ]
 }
