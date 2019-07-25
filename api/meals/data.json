@@ -7,12 +7,10 @@
       "ingredients": [
         { "name": "cauliflower", "quantity": 0.5 },
         { "name": "broccoli", "quantity": 2 },
-        { "name": "egg", "quantity": 1 },
-        { "name": "banana", "quantity": 1 }
+        { "name": "egg", "quantity": 1 }
       ],
       "commonItems": ["salt", "pepper", "oil"],
       "calories": 320,
-      "servings": 1,
       "typeMeal": "breakfast"
     },
     {
@@ -22,7 +20,6 @@
       "ingredients": [{ "name": "egg", "quantity": 2 }],
       "commonItems": [],
       "calories": 310,
-      "servings": 1,
       "typeMeal": "breakfast"
     },
     {

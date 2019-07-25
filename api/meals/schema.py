@@ -13,5 +13,5 @@ class MealType(DjangoObjectType):
 class Query(object):
     all_meals = graphene.List(MealType)
 
-    def resolve_all_meals(self, info, **kwargs):
+    def resolve_all_meals(self, info, test, **kwargs):
         return Meal.objects.all()

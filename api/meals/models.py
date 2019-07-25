@@ -26,7 +26,6 @@ class Meal(models.Model):
     requiresFruit = models.BooleanField(blank=True, default=False)
     link = models.TextField(default='')
     calories = models.IntegerField(default=None)
-    servings = models.IntegerField(default=None)
 
     BREAKFAST = 'BREAKFAST'
     GENERIC = 'GENERIC'
