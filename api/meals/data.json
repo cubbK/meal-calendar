@@ -1,5 +1,5 @@
 {
-  "breakfast": [
+  "meals": [
     {
       "name": "Eggs and vegetables fried in coconut oil",
       "requiresFruit": true,
@@ -12,7 +12,8 @@
       ],
       "commonItems": ["salt", "pepper", "oil"],
       "calories": 320,
-      "servings": 1
+      "servings": 1,
+      "typeMeal": "breakfast"
     },
     {
       "name": "Hard boiled eggs.",
@@ -21,10 +22,9 @@
       "ingredients": [{ "name": "egg", "quantity": 2 }],
       "commonItems": [],
       "calories": 310,
-      "servings": 1
-    }
-  ],
-  "lunchAndDinner": [
+      "servings": 1,
+      "typeMeal": "breakfast"
+    },
     {
       "name": "Chicken salad with olive oil. Handful of nuts.",
       "link": "https://healthyrecipesblogs.com/olive-oil-chicken-salad/",
