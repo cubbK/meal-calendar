@@ -37,12 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles', # Required for GraphiQL
+    'django.contrib.staticfiles',  # Required for GraphiQL
     'graphene_django',
 ]
 
 GRAPHENE = {
-    'SCHEMA': 'api.schema.schema' # Where your Graphene schema lives
+    'SCHEMA': 'api.schema.schema'  # Where your Graphene schema lives
 }
 
 MIDDLEWARE = [
@@ -82,6 +82,7 @@ WSGI_APPLICATION = 'api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'STORAGE_ENGINE': 'MyISAM / INNODB / ETC',
         'NAME': 'test',
         'USER': 'root',
         'PASSWORD': 'root',

@@ -8,7 +8,6 @@ class Ingredient(models.Model):
         return self.name
 
     name = models.CharField(max_length=100, default='')
-    quantity = models.CharField(max_length=50, default='')
 
 
 class CommonItem(models.Model):
@@ -23,7 +22,7 @@ class Meal(models.Model):
         return self.name
 
     name = models.CharField(max_length=200, default='')
-    requiresFruit = models.BooleanField(blank=True, default=False)
+    requiresFruit = models.BooleanField(default=False)
     link = models.TextField(default='')
     calories = models.IntegerField(default=None)
 
@@ -35,5 +34,12 @@ class Meal(models.Model):
     ]
     typeMeal = models.CharField(
         max_length=100, choices=TYPE_MEAL_CHOICES, default=GENERIC)
-    ingredients = models.ManyToManyField(Ingredient)
+    ingredients = models.ManyToManyField(Ingredient, through='Membership')
+
     commonItems = models.ManyToManyField(CommonItem)
+
+
+class Membership(models.Model):
+    meal = models.ForeignKey(Meal, on_delete=models.CASCADE)
+    ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
+    quantity = models.CharField(max_length=200, default='')
