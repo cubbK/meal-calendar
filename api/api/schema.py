@@ -1,6 +1,7 @@
 import graphene
 
 import meals.schema
+import users.schema
 
 
 class Query(meals.schema.Query, graphene.ObjectType):
@@ -8,4 +9,7 @@ class Query(meals.schema.Query, graphene.ObjectType):
     # as we begin to add more apps to our project
     pass
 
-schema = graphene.Schema(query=Query)
+class Mutation(users.schema.Mutation, graphene.ObjectType,):
+    pass
+
+schema = graphene.Schema(query=Query, mutation=Mutation)
