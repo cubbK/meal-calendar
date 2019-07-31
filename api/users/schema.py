@@ -4,6 +4,8 @@ import graphene
 from graphene_django import DjangoObjectType
 from .models import User
 
+from django.core.validators import validate_email
+
 
 class UserType(DjangoObjectType):
     class Meta:
@@ -18,6 +20,11 @@ class CreateUser(graphene.Mutation):
         email = graphene.String(required=True)
 
     def mutate(self, info, password, email):
+        try:
+            validate_email(email)
+        except:
+            raise Exception('Email is not valid')
+
         user = get_user_model()(
             email=email,
         )

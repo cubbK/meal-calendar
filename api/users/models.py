@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.core.exceptions import ValidationError
 
 
 class UserManager(BaseUserManager):
@@ -10,8 +11,8 @@ class UserManager(BaseUserManager):
 
     def _create_user(self, email, password, **extra_fields):
         """Create and save a User with the given email and password."""
-        if not email:
-            raise ValueError('The given email must be set')
+        # raising exception here doesn't do anything for whatever reason.
+        # All validation is done in schema function
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
@@ -22,6 +23,7 @@ class UserManager(BaseUserManager):
         """Create and save a regular User with the given email and password."""
         extra_fields.setdefault('is_staff', False)
         extra_fields.setdefault('is_superuser', False)
+        raise ValueError('The given email must be set1')
         return self._create_user(email, password, **extra_fields)
 
     def create_superuser(self, email, password, **extra_fields):
