@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',  # Required for GraphiQL
     'graphene_django',
     'users.apps.UsersConfig',
-    'meals.apps.MealsConfig'
+    'meals.apps.MealsConfig',
+    'plans.apps.PlansConfig'
 ]
 
 GRAPHENE = {

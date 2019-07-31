@@ -23,7 +23,7 @@ class CreateUser(graphene.Mutation):
         try:
             validate_email(email)
         except:
-            raise Exception('Email is not valid')
+            raise ValueError('Email is not valid')
 
         user = get_user_model()(
             email=email,
