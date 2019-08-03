@@ -16,12 +16,23 @@ def generate_week_plan():
 
     meals = random.sample(list(all_meals), k=MEAL_COUNT)
     breakfasts = random.sample(list(all_breakfasts), k=BREAKFAST_COUNT)
-    
-    
 
-    print(meals)
+    meals_used_last_day = []
+    for i in range(7):
+        breakfast = choose_random_meal(breakfasts, meals_used_last_day)
+        lunch = choose_random_meal(meals, meals_used_last_day)
+        dinner = choose_random_meal(meals, )
+        meals_used_last_day = [breakfast, lunch, dinner]
+        print(meals_used_last_day)
     return WeekPlan()
 
 
-def generate_day_plan():
-    pass
+def choose_random_meal(meals, meals_to_exclude):
+    def filter_meals(meal):
+        if meal in meals_to_exclude:
+            return False
+        else:
+            return True
+    filtered_meals = list(filter(filter_meals, meals))
+    print(filtered_meals)
+    return filtered_meals[0]
